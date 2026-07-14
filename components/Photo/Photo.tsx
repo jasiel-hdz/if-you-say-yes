@@ -19,21 +19,24 @@ export function Photo({
   delay = 0,
 }: PhotoProps) {
   return (
-    <FadeText delay={delay} className="w-full">
-      <figure className="mx-auto w-full max-w-5xl">
-        <div className="relative aspect-[3/4] w-full overflow-hidden bg-[#f5f5f5]">
+    <FadeText
+      delay={delay}
+      className="letter-section flex min-h-[100svh] w-full flex-col items-center justify-center px-10 py-24 md:px-20"
+    >
+      <figure className="mx-auto flex w-full max-w-[340px] flex-col items-center md:max-w-[420px]">
+        <div className="overflow-hidden bg-[#f5f5f5]">
           <Image
             src={src}
             alt={alt}
-            fill
+            width={840}
+            height={1050}
             priority={priority}
             unoptimized
-            sizes="(max-width: 768px) 94vw, 1024px"
-            className="object-cover grayscale"
+            className="h-auto w-full object-contain grayscale"
           />
         </div>
         {caption ? (
-          <figcaption className="mt-6 text-center font-sans text-xs font-light tracking-[0.2em] text-[#666666] uppercase">
+          <figcaption className="mt-10 text-center font-sans text-[10px] font-light tracking-[0.2em] text-[#666666] uppercase">
             {caption}
           </figcaption>
         ) : null}

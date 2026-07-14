@@ -145,7 +145,7 @@ function GallerySection({
   section: Extract<LetterSection, { type: "gallery" }>;
 }) {
   return (
-    <section className="letter-section mx-auto flex w-full max-w-6xl flex-col items-center gap-28 px-6 py-32 md:gap-40 md:px-12">
+    <div className="w-full">
       {section.images.map((src, index) => (
         <Photo
           key={src}
@@ -156,7 +156,7 @@ function GallerySection({
           priority={index === 0}
         />
       ))}
-    </section>
+    </div>
   );
 }
 
