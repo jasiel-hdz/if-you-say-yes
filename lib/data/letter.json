@@ -1,5 +1,5 @@
 {
-  "title": "Querida Ana",
+  "title": "Para Ana ❤️",
   "date": "Julio 2026",
   "sections": [
     {
@@ -7,72 +7,97 @@
       "title": "Querida Ana",
       "date": "Julio 2026",
       "content": [
-        "Esto no es un sitio web.",
-        "Es simplemente algo\nque quería escribirte."
+        "Esto tampoco es un sitio web.",
+        "Es la forma que encontré\npara decirte\nlo que mi corazón\nlleva tiempo queriendo decir."
       ],
       "hint": "Desliza."
     },
+
     {
       "type": "story",
-      "title": "Cuando Nos Conocimos",
+      "title": "Cuando llegaste",
       "content": [
-        "Todavía recuerdo la primera vez\nque te vi.",
-        "No pasó nada dramático.\nNi música. Ni una claridad repentina.",
-        "Solo una certeza callada\nde que algo había cambiado."
+        "Nunca imaginé\nque una pequeña nota,\ny una invitación,\npodrían cambiar\nmis días\nde una forma tan tranquila.",
+        "No fue un instante perfecto.",
+        "Fue una persona perfecta\npara mi vida."
       ]
     },
+
     {
       "type": "story",
-      "title": "Lo Que Sentí",
+      "title": "Lo que más admiro",
       "content": [
-        "No fue ruidoso.",
-        "Fue suave.\nConstante.\nSeguro.",
-        "Como llegar a casa\na un lugar en el que nunca había estado."
+        "Admiro tu inteligencia.",
+        "Tu forma de cuidar\na las personas.",
+        "La pasión con la que hablas\nde tu trabajo,\nde tu maestría\ny de tus sueños."
       ]
     },
+
     {
       "type": "story",
-      "title": "Lo Que Admiro",
+      "title": "Tus pequeños detalles",
       "content": [
-        "La forma en que escuchas\ncomo si cada palabra importara.",
-        "La paciencia en tu silencio.\nLa bondad con la que te mueves\npor el mundo.",
-        "Haces que los momentos ordinarios\nse sientan deliberados."
+        "Me encanta cuando me pides\nque te avise al llegar.",
+        "Cuando me llevas comida.",
+        "Cuando me preparas postres.",
+        "Cuando recuerdas cosas\nque nadie más recuerda."
       ]
     },
+
     {
       "type": "story",
-      "title": "Las Pequeñas Cosas",
+      "title": "Lo que aprendí",
       "content": [
-        "Tu risa cuando intentas contenerla.\nLa forma en que inclinas la cabeza\ncuando piensas.",
-        "Cómo recuerdas detalles\nque la mayoría olvida.",
-        "Esas son las cosas\nque llevo conmigo."
+        "Aprendí que el amor\nno siempre hace ruido.",
+        "A veces se encuentra\nen los pequeños detalles.",
+        "Y entonces entiendes\nque el amor\nno solo se siente.",
+        "También se demuestra."
       ]
     },
+
     {
       "type": "story",
-      "title": "Cómo He Cambiado",
+      "title": "Gracias",
       "content": [
-        "Desde que apareciste,\nme he vuelto más callado\nde la mejor manera.",
-        "Más presente.\nMás cuidadoso con lo que digo.\nMás agradecido por lo que permanece.",
-        "Hiciste espacio en mí\nque yo no sabía que estaba vacío."
+        "Gracias por creer en mí.",
+        "Por abrirme las puertas\nde tu casa...",
+        "y, sobre todo,\nde tu corazón."
       ]
     },
+
     {
       "type": "story",
-      "title": "Lo Que Imagino",
+      "title": "Mi lugar favorito",
       "content": [
-        "Mañanas sin prisa.\nTardes que se alargan\nsolo porque queremos.",
-        "Una vida hecha no de gestos grandiosos,\nsino de elegirnos\nuna y otra vez.",
-        "No necesito el para siempre esta noche.\nSolo el valor\nde pedir el hoy."
+        "Descubrí algo.",
+        "No importa si estamos\nviendo fútbol.",
+        "Cenando.",
+        "En el café.",
+        "O simplemente durmiendo.",
+        "Mi lugar favorito\nsiempre termina siendo\na tu lado."
       ]
     },
+
+    {
+      "type": "story",
+      "title": "Lo que imagino",
+      "content": [
+        "Imagino muchos cumpleaños.",
+        "Muchas cenas.",
+        "Muchos viajes.",
+        "Muchas flores de lirio.",
+        "Muchas despedidas\nque duren cinco minutos\nporque ninguno quiere irse."
+      ]
+    },
+
     {
       "type": "statement",
       "content": [
-        "Si tuviera que elegir\nmi lugar favorito,",
-        "siempre estaría\na tu lado."
+        "Y si algún día\nno hubiera papel suficiente...",
+        "espero que nos alcance\nuna vida entera\npara escribirla juntos."
       ]
     },
+
     {
       "type": "gallery",
       "images": [
@@ -81,19 +106,21 @@
         "/photos/3.jpg"
       ],
       "captions": [
-        "Una tarde tranquila.",
-        "La luz de ese día.",
-        "Nosotros, en algún punto intermedio."
+        "Nuestro comienzo.",
+        "Un recuerdo que siempre guardaré.",
+        "Mi lugar favorito."
       ]
     },
+
     {
       "type": "closing",
       "content": [
-        "Y ahora...",
-        "solo queda\nuna cosa\npor preguntar."
+        "Hay algo...",
+        "que llevo tiempo\nqueriendo preguntarte."
       ],
       "hint": "Desliza."
     },
+
     {
       "type": "question",
       "name": "Ana",
@@ -102,7 +129,9 @@
       "noLabel": "No",
       "yesResponse": {
         "lines": [
-          "Acabas de hacerme\nel hombre más feliz\ndel mundo."
+          "Gracias por elegirme.",
+          "Prometo seguir eligiéndote\ncada día.",
+          "Te amo."
         ]
       }
     }

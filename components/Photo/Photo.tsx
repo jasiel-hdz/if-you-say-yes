@@ -27,6 +27,7 @@ export function Photo({
             alt={alt}
             fill
             priority={priority}
+            unoptimized
             sizes="(max-width: 768px) 94vw, 1024px"
             className="object-cover grayscale"
           />
