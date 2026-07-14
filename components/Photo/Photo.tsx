@@ -20,14 +20,14 @@ export function Photo({
 }: PhotoProps) {
   return (
     <FadeText delay={delay} className="w-full">
-      <figure className="mx-auto w-full max-w-3xl">
+      <figure className="mx-auto w-full max-w-5xl">
         <div className="relative aspect-[3/4] w-full overflow-hidden bg-[#f5f5f5]">
           <Image
             src={src}
             alt={alt}
             fill
             priority={priority}
-            sizes="(max-width: 768px) 90vw, 720px"
+            sizes="(max-width: 768px) 94vw, 1024px"
             className="object-cover grayscale"
           />
         </div>

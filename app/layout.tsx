@@ -17,8 +17,8 @@ const body = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Dear Ana",
-  description: "A letter written for you.",
+  title: "Querida Ana",
+  description: "Una carta escrita para ti.",
   robots: {
     index: false,
     follow: false,
@@ -31,7 +31,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${display.variable} ${body.variable} h-full`}>
+    <html lang="es" className={`${display.variable} ${body.variable} h-full`}>
       <body className="min-h-full bg-white antialiased">{children}</body>
     </html>
   );

@@ -1,76 +1,76 @@
 {
-  "title": "Dear Ana",
-  "date": "July 2026",
+  "title": "Querida Ana",
+  "date": "Julio 2026",
   "sections": [
     {
       "type": "intro",
-      "title": "Dear Ana",
-      "date": "July 2026",
+      "title": "Querida Ana",
+      "date": "Julio 2026",
       "content": [
-        "This is not a website.",
-        "This is simply something\nI wanted to write for you."
+        "Esto no es un sitio web.",
+        "Es simplemente algo\nque quería escribirte."
       ],
-      "hint": "Scroll."
+      "hint": "Desliza."
     },
     {
       "type": "story",
-      "title": "When We Met",
+      "title": "Cuando Nos Conocimos",
       "content": [
-        "I still remember the first time\nI saw you.",
-        "Nothing dramatic happened.\nNo music. No sudden clarity.",
-        "Just a quiet knowing\nthat something had shifted."
+        "Todavía recuerdo la primera vez\nque te vi.",
+        "No pasó nada dramático.\nNi música. Ni una claridad repentina.",
+        "Solo una certeza callada\nde que algo había cambiado."
       ]
     },
     {
       "type": "story",
-      "title": "What I Felt",
+      "title": "Lo Que Sentí",
       "content": [
-        "It was not loud.",
-        "It was soft.\nSteady.\nCertain.",
-        "Like coming home\nto a place I had never been."
+        "No fue ruidoso.",
+        "Fue suave.\nConstante.\nSeguro.",
+        "Como llegar a casa\na un lugar en el que nunca había estado."
       ]
     },
     {
       "type": "story",
-      "title": "What I Admire",
+      "title": "Lo Que Admiro",
       "content": [
-        "The way you listen\nas if every word matters.",
-        "The patience in your silence.\nThe kindness in how you move\nthrough the world.",
-        "You make ordinary moments\nfeel deliberate."
+        "La forma en que escuchas\ncomo si cada palabra importara.",
+        "La paciencia en tu silencio.\nLa bondad con la que te mueves\npor el mundo.",
+        "Haces que los momentos ordinarios\nse sientan deliberados."
       ]
     },
     {
       "type": "story",
-      "title": "The Little Things",
+      "title": "Las Pequeñas Cosas",
       "content": [
-        "Your laugh when you try not to.\nThe way you tilt your head\nwhen you're thinking.",
-        "How you remember details\nmost people forget.",
-        "These are the things\nI carry with me."
+        "Tu risa cuando intentas contenerla.\nLa forma en que inclinas la cabeza\ncuando piensas.",
+        "Cómo recuerdas detalles\nque la mayoría olvida.",
+        "Esas son las cosas\nque llevo conmigo."
       ]
     },
     {
       "type": "story",
-      "title": "How I've Changed",
+      "title": "Cómo He Cambiado",
       "content": [
-        "Since you appeared,\nI have become quieter\nin the best way.",
-        "More present.\nMore careful with what I say.\nMore grateful for what stays.",
-        "You made room in me\nI did not know was empty."
+        "Desde que apareciste,\nme he vuelto más callado\nde la mejor manera.",
+        "Más presente.\nMás cuidadoso con lo que digo.\nMás agradecido por lo que permanece.",
+        "Hiciste espacio en mí\nque yo no sabía que estaba vacío."
       ]
     },
     {
       "type": "story",
-      "title": "What I Imagine",
+      "title": "Lo Que Imagino",
       "content": [
-        "Mornings without hurry.\nEvenings that stretch\njust because we want them to.",
-        "A life built not from grand gestures,\nbut from choosing each other\nagain and again.",
-        "I don't need forever tonight.\nI only need the courage\nto ask for today."
+        "Mañanas sin prisa.\nTardes que se alargan\nsolo porque queremos.",
+        "Una vida hecha no de gestos grandiosos,\nsino de elegirnos\nuna y otra vez.",
+        "No necesito el para siempre esta noche.\nSolo el valor\nde pedir el hoy."
       ]
     },
     {
       "type": "statement",
       "content": [
-        "If I had to choose\nmy favorite place,",
-        "it would always be\nnext to you."
+        "Si tuviera que elegir\nmi lugar favorito,",
+        "siempre estaría\na tu lado."
       ]
     },
     {
@@ -81,32 +81,28 @@
         "/photos/3.jpg"
       ],
       "captions": [
-        "A quiet afternoon.",
-        "The light that day.",
-        "Us, somewhere in between."
+        "Una tarde tranquila.",
+        "La luz de ese día.",
+        "Nosotros, en algún punto intermedio."
       ]
     },
     {
       "type": "closing",
       "content": [
-        "And now...",
-        "there is only\none thing left\nto ask."
+        "Y ahora...",
+        "solo queda\nuna cosa\npor preguntar."
       ],
-      "hint": "Scroll."
+      "hint": "Desliza."
     },
     {
       "type": "question",
       "name": "Ana",
-      "title": "Would you\nbe my girlfriend?",
+      "title": "¿Quieres\nser mi novia?",
+      "yesLabel": "Sí",
+      "noLabel": "No",
       "yesResponse": {
         "lines": [
-          "You just made\nme the happiest man\nin the world."
-        ]
-      },
-      "noResponse": {
-        "lines": [
-          "No worries.",
-          "Thank you\nfor reading this."
+          "Acabas de hacerme\nel hombre más feliz\ndel mundo."
         ]
       }
     }

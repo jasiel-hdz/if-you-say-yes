@@ -41,10 +41,9 @@ export interface QuestionSection {
   type: "question";
   name: string;
   title: string;
+  yesLabel: string;
+  noLabel: string;
   yesResponse: {
-    lines: string[];
-  };
-  noResponse: {
     lines: string[];
   };
 }

@@ -1,16 +1,14 @@
 "use client";
 
-import { useState } from "react";
+import { useCallback, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { FadeText } from "@/components/FadeText/FadeText";
-import { Display, Hint } from "@/components/Typography/Typography";
+import { Display } from "@/components/Typography/Typography";
 import type { QuestionSection } from "@/lib/types";
 
 interface QuestionProps {
   section: QuestionSection;
 }
-
-type Answer = "yes" | "no" | null;
 
 const fadeTransition = {
   duration: 1.2,
@@ -36,16 +34,34 @@ function Multiline({
   );
 }
 
+function escapeOffset(attempt: number) {
+  const distance = 72 + Math.min(attempt, 6) * 18;
+  const angle = (attempt * 137.5 * Math.PI) / 180;
+  const x = Math.cos(angle) * distance;
+  const y = Math.sin(angle) * (distance * 0.55);
+  return { x, y };
+}
+
 export function Question({ section }: QuestionProps) {
-  const [answer, setAnswer] = useState<Answer>(null);
+  const [accepted, setAccepted] = useState(false);
+  const [noOffset, setNoOffset] = useState({ x: 0, y: 0 });
+  const [escapeCount, setEscapeCount] = useState(0);
+
+  const dodgeNo = useCallback(() => {
+    setEscapeCount((count) => {
+      const next = count + 1;
+      setNoOffset(escapeOffset(next));
+      return next;
+    });
+  }, []);
 
   return (
     <div className="letter-section flex min-h-[100svh] w-full flex-col items-center justify-center px-8 py-24 text-center md:px-16">
       <AnimatePresence mode="wait">
-        {answer === null ? (
+        {!accepted ? (
           <motion.div
             key="ask"
-            className="flex w-full max-w-xl flex-col items-center"
+            className="relative flex w-full max-w-xl flex-col items-center"
             initial={{ opacity: 0, y: 20, filter: "blur(6px)" }}
             animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
             exit={{ opacity: 0, y: -12, filter: "blur(4px)" }}
@@ -71,26 +87,46 @@ export function Question({ section }: QuestionProps) {
             <FadeText delay={0.55}>
               <button
                 type="button"
-                onClick={() => setAnswer("yes")}
-                className="font-sans text-sm font-light tracking-[0.4em] uppercase text-[#000000] transition-opacity duration-700 hover:opacity-50 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#111111]"
+                onClick={() => setAccepted(true)}
+                className="group relative px-2 pb-3 font-display text-3xl font-light tracking-[0.18em] text-[#000000] transition-opacity duration-700 hover:opacity-70 focus-visible:outline-none md:text-4xl"
               >
-                Yes
+                <span className="relative z-10">{section.yesLabel}</span>
+                <span
+                  aria-hidden
+                  className="absolute bottom-0 left-1/2 h-px w-10 -translate-x-1/2 bg-[#111111] transition-all duration-[1200ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:w-16"
+                />
               </button>
             </FadeText>
 
-            <div className="h-10" aria-hidden />
+            <div className="h-14" aria-hidden />
 
-            <FadeText delay={0.7}>
-              <button
+            <div className="relative flex h-16 w-full items-center justify-center">
+              <motion.button
                 type="button"
-                onClick={() => setAnswer("no")}
-                className="font-sans text-[10px] font-light tracking-[0.35em] uppercase text-[#666666] transition-opacity duration-700 hover:opacity-40 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#DDDDDD]"
+                aria-label={section.noLabel}
+                onMouseEnter={dodgeNo}
+                onFocus={dodgeNo}
+                onClick={(event) => {
+                  event.preventDefault();
+                  dodgeNo();
+                }}
+                onTouchStart={(event) => {
+                  event.preventDefault();
+                  dodgeNo();
+                }}
+                animate={{ x: noOffset.x, y: noOffset.y }}
+                transition={{
+                  duration: 0.45,
+                  ease: [0.22, 1, 0.36, 1],
+                }}
+                className="font-sans text-[10px] font-light tracking-[0.35em] uppercase text-[#666666] select-none focus-visible:outline-none"
+                style={{ touchAction: "none" }}
               >
-                No
-              </button>
-            </FadeText>
+                {section.noLabel}
+              </motion.button>
+            </div>
           </motion.div>
-        ) : answer === "yes" ? (
+        ) : (
           <motion.div
             key="yes"
             className="flex w-full max-w-xl flex-col items-center"
@@ -117,24 +153,6 @@ export function Question({ section }: QuestionProps) {
                 />
               ))}
             </div>
-          </motion.div>
-        ) : (
-          <motion.div
-            key="no"
-            className="flex w-full max-w-xl flex-col items-center space-y-8"
-            initial={{ opacity: 0, y: 20, filter: "blur(6px)" }}
-            animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-            exit={{ opacity: 0 }}
-            transition={fadeTransition}
-          >
-            {section.noResponse.lines.map((line, index) => (
-              <Multiline
-                key={index}
-                text={line}
-                className="font-display text-2xl font-light leading-[1.5] tracking-[0.02em] text-[#111111] md:text-3xl"
-              />
-            ))}
-            <Hint className="pt-4">With care.</Hint>
           </motion.div>
         )}
       </AnimatePresence>
