@@ -1,0 +1,114 @@
+{
+  "title": "Dear Ana",
+  "date": "July 2026",
+  "sections": [
+    {
+      "type": "intro",
+      "title": "Dear Ana",
+      "date": "July 2026",
+      "content": [
+        "This is not a website.",
+        "This is simply something\nI wanted to write for you."
+      ],
+      "hint": "Scroll."
+    },
+    {
+      "type": "story",
+      "title": "When We Met",
+      "content": [
+        "I still remember the first time\nI saw you.",
+        "Nothing dramatic happened.\nNo music. No sudden clarity.",
+        "Just a quiet knowing\nthat something had shifted."
+      ]
+    },
+    {
+      "type": "story",
+      "title": "What I Felt",
+      "content": [
+        "It was not loud.",
+        "It was soft.\nSteady.\nCertain.",
+        "Like coming home\nto a place I had never been."
+      ]
+    },
+    {
+      "type": "story",
+      "title": "What I Admire",
+      "content": [
+        "The way you listen\nas if every word matters.",
+        "The patience in your silence.\nThe kindness in how you move\nthrough the world.",
+        "You make ordinary moments\nfeel deliberate."
+      ]
+    },
+    {
+      "type": "story",
+      "title": "The Little Things",
+      "content": [
+        "Your laugh when you try not to.\nThe way you tilt your head\nwhen you're thinking.",
+        "How you remember details\nmost people forget.",
+        "These are the things\nI carry with me."
+      ]
+    },
+    {
+      "type": "story",
+      "title": "How I've Changed",
+      "content": [
+        "Since you appeared,\nI have become quieter\nin the best way.",
+        "More present.\nMore careful with what I say.\nMore grateful for what stays.",
+        "You made room in me\nI did not know was empty."
+      ]
+    },
+    {
+      "type": "story",
+      "title": "What I Imagine",
+      "content": [
+        "Mornings without hurry.\nEvenings that stretch\njust because we want them to.",
+        "A life built not from grand gestures,\nbut from choosing each other\nagain and again.",
+        "I don't need forever tonight.\nI only need the courage\nto ask for today."
+      ]
+    },
+    {
+      "type": "statement",
+      "content": [
+        "If I had to choose\nmy favorite place,",
+        "it would always be\nnext to you."
+      ]
+    },
+    {
+      "type": "gallery",
+      "images": [
+        "/photos/1.jpg",
+        "/photos/2.jpg",
+        "/photos/3.jpg"
+      ],
+      "captions": [
+        "A quiet afternoon.",
+        "The light that day.",
+        "Us, somewhere in between."
+      ]
+    },
+    {
+      "type": "closing",
+      "content": [
+        "And now...",
+        "there is only\none thing left\nto ask."
+      ],
+      "hint": "Scroll."
+    },
+    {
+      "type": "question",
+      "name": "Ana",
+      "title": "Would you\nbe my girlfriend?",
+      "yesResponse": {
+        "lines": [
+          "You just made\nme the happiest man\nin the world."
+        ]
+      },
+      "noResponse": {
+        "lines": [
+          "No worries.",
+          "Thank you\nfor reading this."
+        ]
+      }
+    }
+  ]
+}
