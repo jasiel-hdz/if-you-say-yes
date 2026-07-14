@@ -37,7 +37,12 @@ export function Photo({
         </div>
         {caption ? (
           <figcaption className="mt-10 text-center font-sans text-[10px] font-light tracking-[0.2em] text-[#666666] uppercase">
-            {caption}
+            {caption.split("\n").map((part, index, parts) => (
+              <span key={`${index}-${part}`}>
+                {part}
+                {index < parts.length - 1 ? <br /> : null}
+              </span>
+            ))}
           </figcaption>
         ) : null}
       </figure>
